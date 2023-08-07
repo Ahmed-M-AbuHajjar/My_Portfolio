@@ -267,7 +267,7 @@ ul{
     position: relative;
     height: 100vh; /* Adjust the height as needed */
     overflow: hidden;
-    background-image: url('/Images/bg.png');
+    background-image: url('Images/bg.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
