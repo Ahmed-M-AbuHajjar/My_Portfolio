@@ -20,13 +20,6 @@
     <div class="nav_loader" id="nav_loader">
         <div class="nav_loader" id="nav_loader_reverse"></div>
     </div>
-    <div class="background_video">
-        <div class="video_wrapper">
-          <div class="islider"></div>
-        
-          <iframe id="video_player" width="560" height="315" src="https://www.youtube.com/embed/jjo8zc_DG0U?autoplay=1&controls=0&loop=1&mute=1&playlist=jjo8zc_DG0U&showinfo=0&modestbranding=1&nocookie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
       <!-- H E A D E R    S T A R T -->
     <header class="header" id="home">
         <div class="social_links">
@@ -45,7 +38,7 @@
         </div>
        
         <div class="slider">
-            <div class="slider_text">
+            <div class="slider_text container">
                 <h2>Ahmed Moustafa</h2>
                 <div class="typewriter">
                 <p class="bot-p">Full Stack Developer</p>
@@ -102,8 +95,8 @@
                 <li><p> <span >Email:</span><a class="name" href="mailto:AhmedMoustafa1803@gmail.com">AhmedMoustafa1803@gmail.com</a></p></li>
                 <li><p> <span>Phone:</span><a class="name" href="tel:+201090239578">+201090239578</a></p></li>
                 <li><p> <span>Location:</span>Alexandria, Egypt</p></li>
-                <button class="cv-btn"><a href="cv/Ahmed's Resume.pdf" download>Download CV</a></button>
-                <button class="hire-btn"><a href="https://www.linkedin.com/in/ahmed-moustafa-abu-hajjar-614585206/" target="_blank">Hire Me</a></button>
+                <button class="cv-btn animatedBTN"><a href="cv/Ahmed's Resume.pdf" download>Download CV</a><span></span></button>
+                <button class="hire-btn animatedBTN"><a href="https://www.linkedin.com/in/ahmed-moustafa-abu-hajjar-614585206/" target="_blank">Hire Me</a><span></span></button>
             </ul>
             
         </div>
@@ -125,14 +118,32 @@
         <div class="service_card">
             <h4><i class="fa-solid fa-code"></i><br><span class="card_title">Web Development</span></h4>
             <p>I offer professional web development services that help businesses and individuals create dynamic and engaging online experiences. Using the latest technologies and industry best practices, I can build custom websites and web applications that meet your specific needs and exceed your expectations.</p>
+            <div class="animatedBorder">
+                <span class="top"></span>
+                <span class="right"></span>
+                <span class="bottom"></span>
+                <span class="left"></span>
+            </div>
         </div>
         <div class="service_card">
             <h4><i class="fa-sharp fa-solid fa-palette"></i><br><span class="card_title">Web Design</span></h4>
             <p>I provide high-quality web design services that combine creativity and functionality to deliver visually stunning and user-friendly websites. Whether you need a new website or want to refresh your existing one, I can work with you to create a custom design that reflects your brand, engages your audience, and achieves your business goals.</p>
+            <div class="animatedBorder">
+                <span class="top"></span>
+                <span class="right"></span>
+                <span class="bottom"></span>
+                <span class="left"></span>
+            </div>
         </div>
         <div class="service_card">
             <h4><i class="fa-sharp fa-solid fa-mobile-screen"></i><br><span class="card_title">Responsive Design</span></h4>
             <p>I specialize in responsive design services that ensure your website looks great and functions flawlessly on all devices, from desktop computers to smartphones and tablets. By utilizing the latest techniques and tools, I can create a website that adapts to different screen sizes and provides a seamless user experience, no matter how your audience accesses your content.</p>
+            <div class="animatedBorder">
+            <span class="top"></span>
+            <span class="right"></span>
+            <span class="bottom"></span>
+            <span class="left"></span>
+        </div>
         </div>
     
     </div>
@@ -274,7 +285,7 @@
                     </div>
                     <input type="text" placeholder="subject" id="email-subject">
                     <textarea name="message" cols="30" rows="10" placeholder="Message" id="email-message"></textarea>
-                    <button class="message_btn" id="send-message-btn" onclick="sendEmail(event)">Send Message</button>
+                    <button class="message_btn animatedBTN" id="send-message-btn" onclick="sendEmail(event)">Send Message<span></span></button>
                 </form>
                 </div>
                 <div class="contact_info">

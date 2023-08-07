@@ -93,7 +93,6 @@ function sendEmail(event) {
 
 
 window.addEventListener('DOMContentLoaded', function() {
-  let videoPlayer = document.getElementById('video_player');
   let loadingOverlay = document.querySelector('.loading_overlay');
   let loadingScreen = document.getElementById('page_loader');
   loadingScreen.style.display = 'flex';
@@ -104,25 +103,22 @@ window.addEventListener('DOMContentLoaded', function() {
   }, 1000);
   // Show loading overlay
   loadingOverlay.style.display = 'flex';
-
-  // Hide loading overlay when the video is loaded
-  videoPlayer.addEventListener('load', function() {
-    loadingOverlay.style.display = 'none';
-  });
 });
 
 
 let showSection = (targetSection) =>{
   let sections = document.getElementsByTagName('section');
   let header = document.getElementById('home');
-  header.style.visibility = 'hidden';
+ 
   let navLoader = document.getElementById('nav_loader');
   navLoader.style.display = 'block';
   // Hide all sections
   for (let i = 0; i < sections.length; i++) {
     sections[i].style.display = 'none';
   }
-
+  setTimeout(() => {
+    header.style.visibility = 'hidden';
+  }, 1000);
   // Show the target section
   setTimeout(() => {
     document.querySelector(targetSection).style.display = 'block';
@@ -146,10 +142,14 @@ let navLoader = document.getElementById('nav_loader');
      
       setTimeout(() => {
         header.style.visibility = 'visible'
-      }, 1500)
+      }, 800)
       navLoader.style.display = 'block';
       setTimeout(() => {
         navLoader.style.display = 'none';
       }, 2100); 
     });
   });
+
+
+
+ 
